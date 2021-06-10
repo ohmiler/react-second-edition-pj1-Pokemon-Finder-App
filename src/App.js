@@ -74,6 +74,13 @@ export default class App extends Component {
                 alt={pokemon.name}
               />
             <h2 className="pokemon-name-title">{pokemon.name}</h2>
+            <ul>
+              {pokemon.abilities.map((abil) => (
+                <li>
+                  {abil.ability.name}
+                </li>
+              ))}
+            </ul>
           </div>
         ) : (
           <div className="error">
@@ -90,4 +97,3 @@ export default class App extends Component {
     )
   }
 }
-
