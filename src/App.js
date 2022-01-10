@@ -70,7 +70,7 @@ export default class App extends Component {
         {pokemon && !err ? (
           <div className="pokemon-pic">
             <img
-                src={`https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png`}
+                src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.id}.png`}
                 alt={pokemon.name}
               />
             <h2 className="pokemon-name-title">{pokemon.name}</h2>
