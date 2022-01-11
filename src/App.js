@@ -15,7 +15,7 @@ export default class App extends Component {
   }
   
   componentDidMount() {
-    this.getPokemon(this.state.query);
+    this.getPokemon();
   }
 
   getPokemon = async () => {
@@ -50,7 +50,7 @@ export default class App extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    this.getPokemon(e.target.value);
+    this.getPokemon();
   }
 
   render() {
